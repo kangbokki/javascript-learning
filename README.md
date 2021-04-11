@@ -5,10 +5,10 @@
 
 
 ### 구성
-> nodejs
-> [svelte](https://svelte.dev/)
-> webpack
-> docker
+> nodejs  
+> [svelte](https://svelte.dev/)  
+> webpack  
+> docker  
 
 
 ### 목차
