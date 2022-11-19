@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>엑셀 읽기</title>
+  <script src='/src/components/read-excel/readExcel.js'></script>
+  <script>
+    const readExcel = document.createElement('read-excel');
+
+    readExcel.addEventListener('ready', (e) => {
+      console.log('커스텀 태그 ready 이벤트!!!', e);
+    }, false);
+
+    readExcel.addEventListener('complete', (e) => {
+      console.log('커스텀 태그 complete 이벤트!!!', e);
+    }, false);
+
+    ((async () => {
+      setTimeout(() => {
+        document.body.append(readExcel);
+      }, 1000); 
+    })());
+  </script>
+</head>
+<body>
+</body>
+</html>
