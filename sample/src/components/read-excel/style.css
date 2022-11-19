@@ -1,0 +1,5 @@
+span {padding: 0 2px 2px 2px}
+span.spanTest {display:block;}
+span.spanTest::after {content: attr(data-value); margin-left: 5px; color: red}
+input {margin: 0 2px 5px}
+.excel-form {border: 0.2rem dashed #eee;position: absolute;display: inline-block;}
