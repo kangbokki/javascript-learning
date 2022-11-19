@@ -7,7 +7,25 @@
   <title>엑셀 읽기</title>
   <script src='/src/components/read-excel/readExcel.js'></script>
   <script>
+    // 표현식
     const readExcel = document.createElement('read-excel');
+
+    readExcel.addEventListener('ready', (e) => {
+      console.log('커스텀 태그 ready 이벤트!!!', e);
+      document.body.append(readExcel);
+    }, false);
+
+    readExcel.addEventListener('complete', (e) => {
+      console.log('커스텀 태그 complete 이벤트!!!', e);
+    }, false);
+  </script>
+</head>
+<body>
+  <!-- 선언식
+  <read-excel></read-excel>
+  <script>
+    // const readExcel = document.createElement('read-excel');
+    const readExcel = document.querySelector('read-excel');
 
     readExcel.addEventListener('ready', (e) => {
       console.log('커스텀 태그 ready 이벤트!!!', e);
@@ -16,14 +34,6 @@
     readExcel.addEventListener('complete', (e) => {
       console.log('커스텀 태그 complete 이벤트!!!', e);
     }, false);
-
-    ((async () => {
-      setTimeout(() => {
-        document.body.append(readExcel);
-      }, 1000); 
-    })());
-  </script>
-</head>
-<body>
+  </script>-->
 </body>
 </html>
